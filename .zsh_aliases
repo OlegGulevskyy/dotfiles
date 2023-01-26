@@ -1,0 +1,48 @@
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# GIT
+alias ch="git checkout"
+alias fetch="git fetch"
+alias pull="git pull"
+
+# FP Project specific
+alias fpdeploy="npm run build-deploy -- --target=devOleg"
+
+# Executables
+alias nv="nvim"
+alias lg="lazygit"
+
+alias nvc="nvim ~/.config/nvim"
+
+# Navigation
+alias desk="cd ~/Desktop"
+alias docs="cd ~/Documents"
+alias dev="cd ~/Documents/dev/"
+alias config="cd ~/.config"
+
+# ssh
+# mvps hosting
+alias ssh_hosting="ssh root@86.107.197.134"
+
+# Utilities
+alias c="clear"
+alias lla="exa -l -F --icons -a"
+alias zshrc="nvim ~/.zshrc"
+alias als="nvim ~/.zsh_aliases"
+alias nvdir="cd ~/.config/nvim/"
+
+# Search files
+alias sf="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse"
+# Search and edit in nvim
+alias sfnv="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+# Directories
+alias sd="fd --type d --hidden --exclude .git | fzf-tmux -p --reverse"
+# All directories
+alias sdd="cd ~ && fd --type d --hidden --exclude .git | fzf-tmux -p --reverse"
+# Executables
+alias se="fd --type x --hidden --exclude .git | fzf-tmux -p --reverse"
+
+# reload zshrc config file
+alias reload="source ~/.zshrc"
